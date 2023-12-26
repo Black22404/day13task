@@ -1,0 +1,19 @@
+<div class="container">
+
+
+    <div class="row justify-content-center pt-5">
+      <ul class="list-group w-100">
+        <li class="list-group-item" *ngFor="let x of users" >{{x.id}} {{x.name}} <button
+            class="btn btn-success float-end button" [routerLink]="['edit',x.id]" > Edit </button> <button
+            class="btn btn-info float-end button" [routerLink]="['view',x.id]"> View </button> <button
+            class="btn btn-danger float-end button" (click)="deleteruser(x.id)" > Delete </button> </li> <button
+          class="btn btn-large btn-primary m-3" [routerLink]="['add']" > Add User </button>
+          <button
+          class="btn btn-large btn-primary m-3" [routerLink]="['simple']" > Add simple form </button>
+
+          <button
+          class="btn btn-large btn-primary m-3" [routerLink]="['react']" > Add rective form </button>
+          
+      </ul>
+    </div>
+  </div>
